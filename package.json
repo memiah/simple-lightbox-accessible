@@ -1,13 +1,13 @@
 {
-  "name": "simple-lightbox",
+  "name": "@memiah/simple-lightbox-accessible",
   "version": "2.1.0",
   "description": "Lightweight plugin for lightbox images and galleries based on jquery api",
   "main": "src/simpleLightbox.js",
   "license": "MIT",
-  "author": {
-    "email": "dbrekalo@gmail.com",
-    "name": "Damir Brekalo"
-  },
+  "author": "Memiah Limited",
+  "contributors": [
+    "Damir Brekalo <dbrekalo@gmail.com>"
+  ],
   "scripts": {
     "watch": "grunt watch",
     "build": "grunt build",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dbrekalo/simpleLightbox"
+    "url": "https://github.com/memiah/simple-lightbox-accessible"
   },
   "devDependencies": {
     "bourbon": "^4.2.7",
