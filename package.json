@@ -4,7 +4,7 @@
   "description": "Lightweight plugin for lightbox images and galleries based on jquery api",
   "main": "src/simpleLightbox.js",
   "license": "MIT",
-  "author": "Memiah Limited",
+  "author": "Memiah Limited <developers@memiah.co.uk>",
   "contributors": [
     "Damir Brekalo <dbrekalo@gmail.com>"
   ],
