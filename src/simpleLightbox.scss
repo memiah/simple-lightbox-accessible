@@ -190,6 +190,12 @@ $output-bourbon-deprecation-warnings: false;
 
 }
 
+.slbSrOnly {
+
+    position: absolute; width: 0; height: 0; clip: rect(0 0 0 0);
+
+}
+
 @include keyframes(slbOverlay) {
     from { opacity: 0; }
     to { opacity: 0.7; }
