@@ -1,6 +1,6 @@
 {
   "name": "@memiah/simple-lightbox-accessible",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Lightweight plugin for lightbox images and galleries based on jquery api",
   "main": "src/simpleLightbox.js",
   "license": "MIT",
