@@ -419,6 +419,7 @@
         setupLightboxEvents: function() {
 
             var self = this;
+            var KEYCODE_TAB = 9;
 
             if (this.eventRegistry.lightbox.length) {
                 return this;
@@ -454,6 +455,24 @@
             }).addEvent(window, 'resize', function() {
 
                 self.setImageDimensions();
+
+            }).addEvent(this.$el, 'keydown', function(e) {
+
+                var focusable = self.$el.querySelectorAll('button, [href], input, select, textarea');
+
+                if (e.key === 'Tab' || e.keyCode === KEYCODE_TAB) {
+                    if (e.shiftKey) {
+                        if (document.activeElement === focusable[0]) {
+                            focusable[focusable.length - 1].focus();
+                            e.preventDefault();
+                        }
+                    } else {
+                        if (document.activeElement === focusable[focusable.length - 1]) {
+                            focusable[0].focus();
+                            e.preventDefault();
+                        }
+                    }
+                }
 
             });
 
