@@ -1,6 +1,5 @@
 {
   "name": "@memiah/simple-lightbox-accessible",
-  "private": false,
   "version": "2.1.1",
   "description": "Lightweight plugin for lightbox images and galleries based on jquery api",
   "main": "src/simpleLightbox.js",
@@ -15,7 +14,8 @@
     "build": "grunt build",
     "bump:patch": "grunt bump:patch",
     "bump:minor": "grunt bump:minor",
-    "bump:major": "grunt bump:major"
+    "bump:major": "grunt bump:major",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
