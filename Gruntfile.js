@@ -4,7 +4,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         npmPackage: grunt.file.readJSON('package.json'),
-        bowerPackage: grunt.file.readJSON('bower.json'),
 
         eslint: {
             options: {
@@ -68,7 +67,6 @@ module.exports = function(grunt) {
                     globals: {
                         repositoryUrl: '<%= npmPackage.repository.url %>',
                         npmRepositoryName: '<%= npmPackage.name %>',
-                        bowerRepositoryName: '<%= bowerPackage.name %>'
                     },
                     prefix: '{{ ',
                     suffix: ' }}'
@@ -80,8 +78,8 @@ module.exports = function(grunt) {
 
         bump: {
             options: {
-                files: ['package.json', 'package-lock.json'],
-                commitFiles: ['package.json', 'package-lock.json'],
+                files: ['package.json'],
+                commitFiles: ['package.json'],
                 tagName: '%VERSION%',
                 push: false
             }
