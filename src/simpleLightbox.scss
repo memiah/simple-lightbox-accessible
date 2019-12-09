@@ -105,7 +105,7 @@ $output-bourbon-deprecation-warnings: false;
     margin:0; padding: 0; border: 0; cursor: pointer; background: none;
     &::-moz-focus-inner { padding: 0; border: 0; }
 
-    &:hover { opacity: 0.5; }
+    &:hover, &:focus { opacity: 0.5; }
     &:active { opacity: 0.8; }
 
 }

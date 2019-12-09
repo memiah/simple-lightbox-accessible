@@ -136,7 +136,7 @@
   border: 0;
 }
 
-.slbCloseBtn:hover, .slbArrow:hover {
+.slbCloseBtn:hover, .slbCloseBtn:focus, .slbArrow:hover, .slbArrow:focus {
   opacity: 0.5;
 }
 
